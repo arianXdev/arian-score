@@ -1,6 +1,7 @@
 import { Search, User, Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import logo from '@/assets/images/arianscore-logo.png';
 import { useState } from "react";
 
 export function Navbar() {
@@ -13,7 +14,7 @@ export function Navbar() {
           {/* Logo */}
           <div className="flex items-center">
             <div className="flex-shrink-0 flex items-center">
-              <div className="text-2xl font-bold text-primary">ArianScore</div>
+              <div className="text-2xl font-bold text-primary"><a href="/"><img src={logo} width='200'/></a></div>
             </div>
           </div>
 
