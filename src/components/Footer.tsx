@@ -1,13 +1,13 @@
 
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { Mail, Linkedin, Facebook, Youtube, MessageSquare, Send, Twitter, Download } from "lucide-react";
+import { Mail, Linkedin, Facebook, Youtube, MessageSquare, Send, Twitter, Download, ExternalLink } from "lucide-react";
 
 export function Footer() {
   return (
     <footer className="bg-gradient-to-b from-red-900 to-red-950 text-white">
       <div className="max-w-7xl mx-auto px-6 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           
           {/* Subscription Column */}
           <div>
@@ -65,15 +65,6 @@ export function Footer() {
               <li><a href="/opinion-articles" className="text-gray-300 hover:text-white transition-colors">Opinion Articles</a></li>
               <li><a href="/faqs" className="text-gray-300 hover:text-white transition-colors">FAQs</a></li>
             </ul>
-
-            {/* SEO Integration - Our Network */}
-            <div className="mt-6">
-              <h4 className="text-md font-medium mb-2 text-gray-200">Our Network</h4>
-              <ul className="space-y-1">
-                <li><a href="https://paralead.com" className="text-gray-300 hover:text-white transition-colors text-sm">ParaLead - Marketing Intelligence</a></li>
-                <li><a href="https://blockcenter.org" className="text-gray-300 hover:text-white transition-colors text-sm">Blockcenter - Research Hub</a></li>
-              </ul>
-            </div>
           </div>
 
           {/* Contact Column */}
@@ -104,6 +95,25 @@ export function Footer() {
               <li><a href="/privacy" className="text-gray-300 hover:text-white transition-colors">Privacy Policy</a></li>
               <li><a href="/cookies" className="text-gray-300 hover:text-white transition-colors">Cookies Policy</a></li>
             </ul>
+
+            {/* Our Ecosystem */}
+            <div className="mt-6">
+              <h4 className="text-md font-medium mb-2 text-gray-200">Our Ecosystem</h4>
+              <ul className="space-y-1">
+                <li>
+                  <a href="https://paralead.com" className="text-gray-300 hover:text-white transition-colors text-sm flex items-center gap-1">
+                    ParaLead - Decentralized Autonomous Corporation
+                    <ExternalLink className="h-3 w-3" />
+                  </a>
+                </li>
+                <li>
+                  <a href="https://blockcenter.org" className="text-gray-300 hover:text-white transition-colors text-sm flex items-center gap-1">
+                    BlockCenter - Texas Blockchain Center LLC.
+                    <ExternalLink className="h-3 w-3" />
+                  </a>
+                </li>
+              </ul>
+            </div>
             
             <div className="mt-6 text-gray-400 text-sm">
               <p>© 2020-2025 ArianScore LLC.</p>
